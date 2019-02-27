@@ -33,7 +33,7 @@
  * @link      https://gravityplus.pro
  * @copyright 2018 gravity+
  *
- * last updated: october-04, 2018
+ * last updated: feb-27, 2019, wordpress version update
  */
 
 // If this file is called directly, abort.
