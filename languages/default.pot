@@ -1,0 +1,974 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Qualpay Add-On\n"
+"POT-Creation-Date: 2018-06-19 01:39-0400\n"
+"PO-Revision-Date: 2018-06-19 01:31-0500\n"
+"Last-Translator: Naomi C. Bush <hello@naomicbush.com>\n"
+"Language-Team: gravity+ <support@gravityplus.pro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_html__;esc_html_e;_x;_ex;"
+"esc_attr_x;esc_html_x;_n;_nx;_n_noop;_nx_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../includes\n"
+
+#: ../includes/class-addon.php:446
+msgid ""
+"Warning! This action cannot be undone. 'OK' to continue, 'Cancel' to "
+"stop"
+msgstr ""
+
+#: ../includes/class-addon.php:513
+msgid "Authentication"
+msgstr ""
+
+#: ../includes/class-addon.php:514
+#, php-format
+msgid ""
+"This connects your Qualpay account to process your payments. If you "
+"don't already have a Qualpay account, you can %ssign up for one here"
+"%s."
+msgstr ""
+
+#: ../includes/class-addon.php:518
+msgid "Merchant ID"
+msgstr ""
+
+#: ../includes/class-addon.php:526
+msgid "Sandbox API Security Key"
+msgstr ""
+
+#: ../includes/class-addon.php:536
+msgid "Production API Security Key"
+msgstr ""
+
+#: ../includes/class-addon.php:547
+msgid "Webhooks"
+msgstr ""
+
+#: ../includes/class-addon.php:776
+msgid "Invalid security key. Please try again."
+msgstr ""
+
+#: ../includes/class-addon.php:809
+msgid "Invalid merchant ID."
+msgstr ""
+
+#: ../includes/class-addon.php:974
+msgid "United States Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:983
+msgid "United Arab Emirates Dirham"
+msgstr ""
+
+#: ../includes/class-addon.php:992
+msgid "Afghan Afghani"
+msgstr ""
+
+#: ../includes/class-addon.php:1002
+msgid "Albanian Lek"
+msgstr ""
+
+#: ../includes/class-addon.php:1011
+msgid "Armenian Dram"
+msgstr ""
+
+#: ../includes/class-addon.php:1020
+msgid "Netherlands Antillean Gulden"
+msgstr ""
+
+#: ../includes/class-addon.php:1029
+msgid "Angolan Kwanza"
+msgstr ""
+
+#: ../includes/class-addon.php:1039
+msgid "Argentine Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:1049
+msgid "Australian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1059
+msgid "Aruban Florin"
+msgstr ""
+
+#: ../includes/class-addon.php:1068
+msgid "Azerbaijani Manat"
+msgstr ""
+
+#: ../includes/class-addon.php:1077
+msgid "Bosnia & Herzegovina Convertible Mark"
+msgstr ""
+
+#: ../includes/class-addon.php:1086
+msgid "Barbadian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1095
+msgid "Bangladeshi Taka"
+msgstr ""
+
+#: ../includes/class-addon.php:1104
+msgid "Bulgarian Lev"
+msgstr ""
+
+#: ../includes/class-addon.php:1113
+msgid "Burundian Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1122
+msgid "Bermudian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1131
+msgid "Brunei Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1140
+msgid "Bolivian Boliviano"
+msgstr ""
+
+#: ../includes/class-addon.php:1150
+msgid "Brazilian Real"
+msgstr ""
+
+#: ../includes/class-addon.php:1160
+msgid "Bahamian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1169
+msgid "Botswana Pula"
+msgstr ""
+
+#: ../includes/class-addon.php:1178
+msgid "Belize Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1187
+msgid "Canadian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1197
+msgid "Congolese Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1206
+msgid "Swiss Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1215
+msgid "Chilean Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:1225
+msgid "Chinese Renminbi Yuan"
+msgstr ""
+
+#: ../includes/class-addon.php:1234
+msgid "Colombian Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:1244
+msgid "Costa Rican Colón"
+msgstr ""
+
+#: ../includes/class-addon.php:1254
+msgid "Cape Verdean Escudo"
+msgstr ""
+
+#: ../includes/class-addon.php:1264
+msgid "Czech Koruna"
+msgstr ""
+
+#: ../includes/class-addon.php:1274
+msgid "Djiboutian Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1284
+msgid "Danish Krone"
+msgstr ""
+
+#: ../includes/class-addon.php:1293
+msgid "Dominican Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:1302
+msgid "Algerian Dinar"
+msgstr ""
+
+#: ../includes/class-addon.php:1311
+msgid "Estonian Kroon"
+msgstr ""
+
+#: ../includes/class-addon.php:1321
+msgid "Egyptian Pound"
+msgstr ""
+
+#: ../includes/class-addon.php:1330
+msgid "Ethiopian Birr"
+msgstr ""
+
+#: ../includes/class-addon.php:1339
+msgid "Euro"
+msgstr ""
+
+#: ../includes/class-addon.php:1348
+msgid "Fijian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1357
+msgid "Falkland Islands Pound"
+msgstr ""
+
+#: ../includes/class-addon.php:1367
+msgid "British Pound"
+msgstr ""
+
+#: ../includes/class-addon.php:1376
+msgid "Georgian Lari"
+msgstr ""
+
+#: ../includes/class-addon.php:1385
+msgid "Gibraltar Pound"
+msgstr ""
+
+#: ../includes/class-addon.php:1394
+msgid "Gambian Dalasi"
+msgstr ""
+
+#: ../includes/class-addon.php:1403
+msgid "Guinean Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1413
+msgid "Guatemalan Quetzal"
+msgstr ""
+
+#: ../includes/class-addon.php:1423
+msgid "Guyanese Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1432
+msgid "Hong Kong Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1441
+msgid "Honduran Lempira"
+msgstr ""
+
+#: ../includes/class-addon.php:1451
+msgid "Croatian Kuna"
+msgstr ""
+
+#: ../includes/class-addon.php:1460
+msgid "Haitian Gourde"
+msgstr ""
+
+#: ../includes/class-addon.php:1469
+msgid "Hungarian Forint"
+msgstr ""
+
+#: ../includes/class-addon.php:1478
+msgid "Indonesian Rupiah"
+msgstr ""
+
+#: ../includes/class-addon.php:1487
+msgid "Israeli New Sheqel"
+msgstr ""
+
+#: ../includes/class-addon.php:1496
+msgid "Indian Rupee"
+msgstr ""
+
+#: ../includes/class-addon.php:1506
+msgid "Icelandic Króna"
+msgstr ""
+
+#: ../includes/class-addon.php:1515
+msgid "Jamaican Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1524
+msgid "Japanese Yen"
+msgstr ""
+
+#: ../includes/class-addon.php:1533
+msgid "Kenyan Shilling"
+msgstr ""
+
+#: ../includes/class-addon.php:1542
+msgid "Kyrgyzstani Som"
+msgstr ""
+
+#: ../includes/class-addon.php:1551
+msgid "Cambodian Riel"
+msgstr ""
+
+#: ../includes/class-addon.php:1560
+msgid "Comorian Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1569
+msgid "South Korean Won"
+msgstr ""
+
+#: ../includes/class-addon.php:1578
+msgid "Cayman Islands Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1587
+msgid "Kazakhstani Tenge"
+msgstr ""
+
+#: ../includes/class-addon.php:1596
+msgid "Lao Kip"
+msgstr ""
+
+#: ../includes/class-addon.php:1606
+msgid "Lebanese Pound"
+msgstr ""
+
+#: ../includes/class-addon.php:1615
+msgid "Sri Lankan Rupee"
+msgstr ""
+
+#: ../includes/class-addon.php:1624
+msgid "Liberian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1633
+msgid "Lesotho Loti"
+msgstr ""
+
+#: ../includes/class-addon.php:1642
+msgid "Lithuanian Litas"
+msgstr ""
+
+#: ../includes/class-addon.php:1651
+msgid "Latvian Lats"
+msgstr ""
+
+#: ../includes/class-addon.php:1660
+msgid "Moroccan Dirham"
+msgstr ""
+
+#: ../includes/class-addon.php:1669
+msgid "Moldovan Leu"
+msgstr ""
+
+#: ../includes/class-addon.php:1678
+msgid "Malagasy Ariary"
+msgstr ""
+
+#: ../includes/class-addon.php:1687
+msgid "Macedonian Denar"
+msgstr ""
+
+#: ../includes/class-addon.php:1696
+msgid "Mongolian Tögrög"
+msgstr ""
+
+#: ../includes/class-addon.php:1705
+msgid "Macanese Pataca"
+msgstr ""
+
+#: ../includes/class-addon.php:1714
+msgid "Mauritanian Ouguiya"
+msgstr ""
+
+#: ../includes/class-addon.php:1723
+msgid "Mauritian Rupee"
+msgstr ""
+
+#: ../includes/class-addon.php:1733
+msgid "Maldivian Rufiyaa"
+msgstr ""
+
+#: ../includes/class-addon.php:1742
+msgid "Malawian Kwacha"
+msgstr ""
+
+#: ../includes/class-addon.php:1751
+msgid "Mexican Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:1761
+msgid "Malaysian Ringgit"
+msgstr ""
+
+#: ../includes/class-addon.php:1770
+msgid "Mozambican Metical"
+msgstr ""
+
+#: ../includes/class-addon.php:1779
+msgid "Namibian Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1788
+msgid "Nigerian Naira"
+msgstr ""
+
+#: ../includes/class-addon.php:1797
+msgid "Nicaraguan Córdoba"
+msgstr ""
+
+#: ../includes/class-addon.php:1807
+msgid "Norwegian Krone"
+msgstr ""
+
+#: ../includes/class-addon.php:1816
+msgid "Nepalese Rupee"
+msgstr ""
+
+#: ../includes/class-addon.php:1825
+msgid "New Zealand Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1834
+msgid "Panamanian Balboa"
+msgstr ""
+
+#: ../includes/class-addon.php:1844
+msgid "Peruvian Nuevo Sol"
+msgstr ""
+
+#: ../includes/class-addon.php:1854
+msgid "Papua New Guinean Kina"
+msgstr ""
+
+#: ../includes/class-addon.php:1863
+msgid "Philippine Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:1872
+msgid "Pakistani Rupee"
+msgstr ""
+
+#: ../includes/class-addon.php:1881
+msgid "Polish Złoty"
+msgstr ""
+
+#: ../includes/class-addon.php:1890
+msgid "Paraguayan Guaraní"
+msgstr ""
+
+#: ../includes/class-addon.php:1900
+msgid "Qatari Riyal"
+msgstr ""
+
+#: ../includes/class-addon.php:1909
+msgid "Romanian Leu"
+msgstr ""
+
+#: ../includes/class-addon.php:1918
+msgid "Serbian Dinar"
+msgstr ""
+
+#: ../includes/class-addon.php:1927
+msgid "Russian Ruble"
+msgstr ""
+
+#: ../includes/class-addon.php:1936
+msgid "Rwandan Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:1945
+msgid "Saudi Riyal"
+msgstr ""
+
+#: ../includes/class-addon.php:1954
+msgid "Solomon Islands Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1963
+msgid "Seychellois Rupee"
+msgstr ""
+
+#: ../includes/class-addon.php:1972
+msgid "Swedish Krona"
+msgstr ""
+
+#: ../includes/class-addon.php:1981
+msgid "Singapore Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:1990
+msgid "Saint Helenian Pound"
+msgstr ""
+
+#: ../includes/class-addon.php:2000
+msgid "Sierra Leonean Leone"
+msgstr ""
+
+#: ../includes/class-addon.php:2009
+msgid "Somali Shilling"
+msgstr ""
+
+#: ../includes/class-addon.php:2018
+msgid "Surinamese Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:2028
+msgid "São Tomé and Príncipe Dobra"
+msgstr ""
+
+#: ../includes/class-addon.php:2037
+msgid "Salvadoran Colón"
+msgstr ""
+
+#: ../includes/class-addon.php:2047
+msgid "Swazi Lilangeni"
+msgstr ""
+
+#: ../includes/class-addon.php:2056
+msgid "Thai Baht"
+msgstr ""
+
+#: ../includes/class-addon.php:2065
+msgid "Tajikistani Somoni"
+msgstr ""
+
+#: ../includes/class-addon.php:2074
+msgid "Tongan Paʻanga"
+msgstr ""
+
+#: ../includes/class-addon.php:2083
+msgid "Turkish Lira"
+msgstr ""
+
+#: ../includes/class-addon.php:2092
+msgid "Trinidad and Tobago Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:2101
+msgid "New Taiwan Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:2110
+msgid "Tanzanian Shilling"
+msgstr ""
+
+#: ../includes/class-addon.php:2119
+msgid "Ukrainian Hryvnia"
+msgstr ""
+
+#: ../includes/class-addon.php:2128
+msgid "Ugandan Shilling"
+msgstr ""
+
+#: ../includes/class-addon.php:2137
+msgid "Uruguayan Peso"
+msgstr ""
+
+#: ../includes/class-addon.php:2146
+msgid "Uzbekistani Som"
+msgstr ""
+
+#: ../includes/class-addon.php:2155
+msgid "Venezuelan Bolívar"
+msgstr ""
+
+#: ../includes/class-addon.php:2165
+msgid "Vietnamese Đồng"
+msgstr ""
+
+#: ../includes/class-addon.php:2174
+msgid "Vanuatu Vatu"
+msgstr ""
+
+#: ../includes/class-addon.php:2183
+msgid "Samoan Tala"
+msgstr ""
+
+#: ../includes/class-addon.php:2192
+msgid "Central African Cfa Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:2201
+msgid "East Caribbean Dollar"
+msgstr ""
+
+#: ../includes/class-addon.php:2210
+msgid "West African Cfa Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:2220
+msgid "Cfp Franc"
+msgstr ""
+
+#: ../includes/class-addon.php:2230
+msgid "Yemeni Rial"
+msgstr ""
+
+#: ../includes/class-addon.php:2239
+msgid "South African Rand"
+msgstr ""
+
+#: ../includes/class-addon.php:2248
+msgid "Zambian Kwacha"
+msgstr ""
+
+#: ../includes/class-addon.php:2310
+#, php-format
+msgid ""
+"Your %sQualpay settings%s are not filled in -- using default "
+"currency."
+msgstr ""
+
+#: ../includes/class-addon.php:2314
+msgid "Your Qualpay account allows these currencies."
+msgstr ""
+
+#: ../includes/class-addon.php:2356
+msgid "Qualpay Plans"
+msgstr ""
+
+#: ../includes/class-addon.php:2396
+msgid "Qualpay Settings"
+msgstr ""
+
+#: ../includes/class-addon.php:2486
+msgid "Sandbox"
+msgstr ""
+
+#: ../includes/class-addon.php:2493
+msgid "Live"
+msgstr ""
+
+#: ../includes/class-addon.php:2504
+msgid "Environment"
+msgstr ""
+
+#: ../includes/class-addon.php:2548 ../includes/class-addon.php:2638
+msgid "Name"
+msgstr ""
+
+#: ../includes/class-addon.php:2549 ../includes/class-addon.php:2647
+msgid "Payment Type"
+msgstr ""
+
+#: ../includes/class-addon.php:2550 ../includes/class-addon.php:2710
+msgid "Transaction Type"
+msgstr ""
+
+#: ../includes/class-addon.php:2572 ../includes/class-addon.php:2658
+msgid "Subscription"
+msgstr ""
+
+#: ../includes/class-addon.php:2578
+msgid "One-Time"
+msgstr ""
+
+#: ../includes/class-addon.php:2639
+msgid "Name for this feed"
+msgstr ""
+
+#: ../includes/class-addon.php:2650
+msgid "Select a payment type"
+msgstr ""
+
+#: ../includes/class-addon.php:2654
+msgid "One-Time Payment"
+msgstr ""
+
+#: ../includes/class-addon.php:2671 ../includes/class-addon.php:2672
+msgid "Transaction Fields"
+msgstr ""
+
+#: ../includes/class-addon.php:2672
+msgid ""
+"Select the product fields that will be included in this transaction. "
+"Choose Form Total to include all product fields."
+msgstr ""
+
+#: ../includes/class-addon.php:2687
+msgid "Plan Type"
+msgstr ""
+
+#: ../includes/class-addon.php:2690
+msgid "Select a plan type"
+msgstr ""
+
+#: ../includes/class-addon.php:2694
+msgid "Existing Plan"
+msgstr ""
+
+#: ../includes/class-addon.php:2698
+msgid "One-Off"
+msgstr ""
+
+#: ../includes/class-addon.php:2713
+msgid "Select a transaction type"
+msgstr ""
+
+#: ../includes/class-addon.php:2717
+msgid "Sale"
+msgstr ""
+
+#: ../includes/class-addon.php:2721
+msgid "Authorization"
+msgstr ""
+
+#: ../includes/class-addon.php:2732 ../includes/class-addon.php:2733
+msgid "Plan"
+msgstr ""
+
+#: ../includes/class-addon.php:2733
+msgid ""
+"Choose either the form field that holds the plan code or the plan "
+"itself."
+msgstr ""
+
+#: ../includes/class-addon.php:2746
+msgid "Plan Description"
+msgstr ""
+
+#: ../includes/class-addon.php:2755
+msgid "Plan Frequency"
+msgstr ""
+
+#: ../includes/class-addon.php:2758
+msgid "Select plan frequency"
+msgstr ""
+
+#: ../includes/class-addon.php:2762
+msgid "Weekly"
+msgstr ""
+
+#: ../includes/class-addon.php:2766
+msgid "Bi-Weekly"
+msgstr ""
+
+#: ../includes/class-addon.php:2770
+msgid "Monthly"
+msgstr ""
+
+#: ../includes/class-addon.php:2774
+msgid "Quarterly"
+msgstr ""
+
+#: ../includes/class-addon.php:2778
+msgid "BiAnnually"
+msgstr ""
+
+#: ../includes/class-addon.php:2782
+msgid "Annually"
+msgstr ""
+
+#: ../includes/class-addon.php:2793 ../includes/class-addon.php:2794
+msgid "Monthly Interval"
+msgstr ""
+
+#: ../includes/class-addon.php:2794
+msgid ""
+"Number of months in the subscription cycle e.g. bill every 2 months"
+msgstr ""
+
+#: ../includes/class-addon.php:2805 ../includes/class-addon.php:2806
+msgid "Plan Duration"
+msgstr ""
+
+#: ../includes/class-addon.php:2806
+msgid ""
+"Number of billing cycles in the recurring transaction, Use -1 if "
+"billing cycles are indefinite"
+msgstr ""
+
+#: ../includes/class-addon.php:2815
+msgid "Setup Fee"
+msgstr ""
+
+#: ../includes/class-addon.php:2822
+msgid "Start Date"
+msgstr ""
+
+#: ../includes/class-addon.php:2835
+msgid "Use customer information from previous feed"
+msgstr ""
+
+#: ../includes/class-addon.php:2846 ../includes/class-addon.php:2974
+msgid "Customer Information"
+msgstr ""
+
+#: ../includes/class-addon.php:2858
+msgid "Billing Information"
+msgstr ""
+
+#: ../includes/class-addon.php:2870
+msgid "Shipping Information"
+msgstr ""
+
+#: ../includes/class-addon.php:2883
+msgid "Payment Profile"
+msgstr ""
+
+#: ../includes/class-addon.php:2897
+msgid "Email receipt"
+msgstr ""
+
+#: ../includes/class-addon.php:2911 ../includes/class-addon.php:2912
+msgid "Purchase ID"
+msgstr ""
+
+#: ../includes/class-addon.php:2912
+msgid "Also referred to as the invoice number"
+msgstr ""
+
+#: ../includes/class-addon.php:2919
+msgid "Report Data"
+msgstr ""
+
+#: ../includes/class-addon.php:2920
+msgid ""
+"Enter your custom field name, then select the form field with the "
+"value for that field"
+msgstr ""
+
+#: ../includes/class-addon.php:2928 ../includes/class-addon.php:2930
+#: ../includes/class-addon.php:2994
+msgid "Conditional Logic"
+msgstr ""
+
+#: ../includes/class-addon.php:2930
+msgid ""
+"When conditions are enabled, form submissions will only be sent to "
+"the payment gateway when the conditions are met. When disabled, all "
+"form submissions will be sent to the payment gateway."
+msgstr ""
+
+#: ../includes/class-addon.php:2945
+msgid "One-Time Payment Settings"
+msgstr ""
+
+#: ../includes/class-addon.php:2956
+msgid "Subscription Payment Settings"
+msgstr ""
+
+#: ../includes/class-addon.php:2984
+msgid "Options"
+msgstr ""
+
+#: ../includes/class-addon.php:3052
+msgid "Email"
+msgstr ""
+
+#: ../includes/class-addon.php:3057
+msgid "First Name"
+msgstr ""
+
+#: ../includes/class-addon.php:3062
+msgid "Last Name"
+msgstr ""
+
+#: ../includes/class-addon.php:3067
+msgid "Business Name"
+msgstr ""
+
+#: ../includes/class-addon.php:3072
+msgid "Phone"
+msgstr ""
+
+#: ../includes/class-addon.php:3092
+msgid "Address Line 1"
+msgstr ""
+
+#: ../includes/class-addon.php:3097
+msgid "Address Line 2"
+msgstr ""
+
+#: ../includes/class-addon.php:3102
+msgid "City"
+msgstr ""
+
+#: ../includes/class-addon.php:3107
+msgid "State"
+msgstr ""
+
+#: ../includes/class-addon.php:3112
+msgid "Zip"
+msgstr ""
+
+#: ../includes/class-addon.php:3117
+msgid "Country"
+msgstr ""
+
+#: ../includes/class-addon.php:3136
+msgid "Select payment profile"
+msgstr ""
+
+#: ../includes/class-addon.php:3601
+msgid "ending in "
+msgstr ""
+
+#: ../includes/class-addon.php:4262
+msgid "options: "
+msgstr ""
+
+#: ../includes/class-addon.php:5084
+#, php-format
+msgid ""
+"Inserting new user — user_login: %s, first_name: %s, last_name: %s, "
+"user_email: %s"
+msgstr ""
+
+#: ../includes/class-addon.php:5152
+#, php-format
+msgid "Subscription has been created. Subscription Id: %s."
+msgstr ""
+
+#: ../includes/class-addon.php:5222
+msgid "Qualpay Payment Gateway ID"
+msgstr ""
+
+#: ../includes/class-addon.php:5276
+msgid "Qualpay Payment Details"
+msgstr ""
+
+#: ../includes/class-addon.php:5429
+#, php-format
+msgid "Subscription %s paused."
+msgstr ""
+
+#: ../includes/class-addon.php:5444
+#, php-format
+msgid "Subscription %s resumed."
+msgstr ""
+
+#: ../includes/class-addon.php:5733
+#, php-format
+msgid "Subscription has been suspended. Subscriber Id: %s"
+msgstr ""
+
+#: ../includes/class-addon.php:5756
+#, php-format
+msgid "Subscription has been completed. Subscriber Id: %s"
+msgstr ""
+
+#: ../includes/views/entry-detail-meta_box_payment_details.php:26
+msgid "Customer"
+msgstr ""
+
+#: ../includes/views/entry-detail-meta_box_payment_details.php:53
+msgid "Date"
+msgstr ""
+
+#: ../includes/views/entry-detail-meta_box_payment_details.php:89
+msgid "Subscription Start Date"
+msgstr ""
+
+#: ../includes/views/entry-detail-meta_box_payment_details.php:129
+msgid "Status"
+msgstr ""
+
+#: ../includes/views/plugin-settings-webhooks.php:14
+msgid "Test webhook: "
+msgstr ""
+
+#: ../includes/views/plugin-settings-webhooks.php:15
+msgid "Live webhook: "
+msgstr ""
