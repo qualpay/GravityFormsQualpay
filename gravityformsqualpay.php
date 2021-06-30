@@ -4,7 +4,7 @@
  * Plugin Name: Gravity Forms Qualpay Add-On
  * Plugin URI: https://www.qualpay.com
  * Description: Integrate Gravity Forms with Qualpay
- * Version: 1.2.1
+ * Version: 1.2.4
  * Author: gravity+ for Qualpay
  * Author URI: https://qualpay.com
  * Text Domain: gravityformsqualpay
@@ -27,13 +27,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  * @package   GFP_Qualpay
- * @version   1.2.1
+ * @version   1.2.4
  * @author    gravity+ <support@gravityplus.pro>
  * @license   GPL-2.0+
  * @link      https://gravityplus.pro
  * @copyright 2018 gravity+
  *
- * last updated: feb-27, 2019, wordpress version update
  */
 
 // If this file is called directly, abort.
@@ -43,7 +42,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-define( 'GFP_QUALPAY_CURRENT_VERSION', '1.2' );
+define( 'GFP_QUALPAY_CURRENT_VERSION', '1.2.4' );
 
 define( 'GFP_QUALPAY_FILE', __FILE__ );
 

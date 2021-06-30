@@ -1,9 +1,11 @@
-=== Qualpay for Gravity Forms Addon ===
+=== Qualpay Payment Plugin for Gravity Forms ===
 Contributors: developerqualpay
 Tags: gravity, payment, credit cards, recurring, subscription
 Requires at least: 4.4.0
-Tested up to: 5.1
+Tested up to: 5.2
+Stable tag: 1.2
 Requires PHP: 7.0
+Version : 1.2
 
 Qualpay for Gravity Forms.  Add credit card payments to your custom gravity forms.
 
@@ -30,8 +32,6 @@ The message “Plugin installed successfully” is displayed when the installati
 Note: Qualpay’s plugin is an add-on to Gravity Forms, you must first install the Gravity Form plugin, before installing the Qualpay Plugin for Gravity Forms.
 
 
-
-
 == Screenshots ==
 1. Qualpay's Embedded Fields
 2. Configuration
@@ -40,3 +40,4 @@ Note: Qualpay’s plugin is an add-on to Gravity Forms, you must first install t
 == Changelog ==
 1.0 Initial Release
 1.1 Masked Security Key,  fixed bugs related to sandbox and production migration workflow
+1.2 Fixed bug for Customer id and developer id for api call

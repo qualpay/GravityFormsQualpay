@@ -308,7 +308,8 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 */
 	public function get_developer_id() {
 
-		return 'GFPQualpay';
+		return 'GravityForms' . GFP_QUALPAY_CURRENT_VERSION;
+		
 	}
 
 	/**
@@ -4622,8 +4623,10 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			$first_name = $this->current_submission_data[ 'customer_first_name' ];
 
 			$last_name = $this->current_submission_data[ 'customer_last_name' ];
-
-			$name_code = strtoupper( substr( $first_name, 0, 3 ) . substr( $last_name, 0, 3 ) );
+			$name_code = substr(strtoupper($first_name . $last_name), 0, 27);
+			//$name_code = strtoupper( substr( $first_name, 0, 3 ) . substr( $last_name, 0, 3 ) );
+			$name_code = str_replace(' ', '', $name_code);
+			$name_code = preg_replace("/[^A-Za-z0-9]/", "", $name_code);
 
 			if(empty($this->current_submission_data[ 'billing_zip' ]))
 			{
@@ -4946,7 +4949,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 		try {
 
-			$customer_id = $name_code . $this->get_random_string( 26 );
+			$customer_id = $name_code ."_". $this->get_random_string( 4 );
 
 		} catch ( TypeError $e ) {
 
