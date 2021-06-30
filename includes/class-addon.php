@@ -1,6 +1,6 @@
 <?php
 /* @package   GFP_Qualpay\GFP_Qualpay_Addon
- * @author    Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author    Jankee Patel from Qualpay 
  * @copyright 2018 gravity+
  * @license   GPL-2.0+
  * @since     1.0.0
@@ -36,7 +36,7 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
@@ -138,7 +138,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var GFP_Qualpay_API | null
 	 */
@@ -149,7 +149,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var array
 	 */
@@ -160,7 +160,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var array
 	 */
@@ -171,7 +171,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -182,7 +182,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -208,7 +208,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $args
 	 */
@@ -268,13 +268,13 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 		return self::$_instance;
 
 	}
-
+	
 	/**
 	 * Get Qualpay API Requestor
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $mode
 	 *
@@ -302,7 +302,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return string
 	 */
@@ -317,7 +317,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $previous_version
 	 */
@@ -335,7 +335,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	public function init_admin() {
 
@@ -380,7 +380,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	public function init() {
 
@@ -395,7 +395,6 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 		add_action( 'gform_register_init_scripts', array( $this, 'gform_register_init_scripts' ), 10, 3 );
 
 		add_filter( 'gform_field_validation', array( $this, 'gform_field_validation' ), 10, 4 );
-
 	}
 
 	public function init_ajax() {
@@ -415,7 +414,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -436,8 +435,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 					array( 'field_types' => array( 'creditcard' ) ),
 				)
 			);
-
-
+			
 		return array_merge( parent::styles(), $styles );
 	}
 
@@ -446,7 +444,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -465,7 +463,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 				'in_footer' => false,
 				'enqueue'   => array(
 					array(
-						'admin_page' => array( 'entry_view' )
+						'admin_page' => array( 'entry_view','form_editor', 'form_settings', 'plugin_settings', 'plugin_page', 'entry_detail', 'results' )
 					),
 				),
 				'strings'   => array(
@@ -514,7 +512,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return string
 	 */
@@ -529,7 +527,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -634,7 +632,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return string
 	 */
@@ -680,7 +678,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $mode
 	 *
@@ -764,7 +762,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return string
 	 */
@@ -786,7 +784,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $field
 	 * @param $field_setting
@@ -815,7 +813,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $field
 	 * @param $field_setting
@@ -867,7 +865,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	private function validate_merchant_id( $environment ) {
 
@@ -900,7 +898,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param       $value
 	 * @param array $field
@@ -929,7 +927,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -2234,7 +2232,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $predefined_choices
 	 *
@@ -2290,7 +2288,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return string
 	 */
@@ -2304,14 +2302,23 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return string
 	 */
 	public function form_settings_page_title() {
 
-		return __( 'Qualpay Settings', 'gravityformsqualpay' );
+		return __( 'Qualpay Feed Setting', 'gravityformsqualpay' );
 
+	}
+
+	public function is_feed_edit_page() {
+		$view        = rgget( 'view' );
+		$id          = rgget( 'id' );
+		$form        = GFAPI::get_form( $id );
+		$environment = $this->get_qualpay_mode( $form );
+		
+		return $view === 'settings' && rgget( 'subview' ) === $this->get_slug();
 	}
 
 	/**
@@ -2325,7 +2332,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $form
 	 */
@@ -2347,7 +2354,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 			$this->set_settings( $settings );
 
-			$sections = $this->form_settings_fields( $form );
+			//$sections = $this->form_settings_fields( $form );
 
 			GFCommon::display_admin_message();
 
@@ -2355,7 +2362,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 			if ( empty( $page_title ) ) {
 
-				$page_title = rgar( $sections[ 0 ], 'title' );
+				//$page_title = rgar( $sections[ 0 ], 'title' );
 
 				$sections[ 0 ][ 'title' ] = false;
 
@@ -2370,18 +2377,18 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			}
 
 			?>
-            <h3><span><?php echo $icon ?><?php echo $page_title ?></span></h3>
+            <h3><span><?php echo $icon; ?><?php echo esc_html__( $page_title, 'gravityformsqualpay' ); ?></span></h3>
 			<?php
 
-			$this->render_settings( $sections );
+			//$this->render_settings( $sections );
 
 			$environment = $this->get_qualpay_mode( $form );
 
-			if ( ! empty( $environment ) ) {
+			//if ( ! empty( $environment ) ) {
 
 			    $this->feed_list_page( $form );
 
-			}
+			//}
 
 		}
 
@@ -2394,51 +2401,41 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $form
 	 *
 	 * @return array
 	 */
 	public function form_settings_fields( $form ) {
-
-        $environment = $this->get_qualpay_mode( $form );
-
-        $choices = array();
-
-       // if ( empty( $environment ) || 'test' == $environment ) {
-
-            $choices[] = array( 'label' => __( 'Sandbox', 'gravityformsqualpay' ), 'value' => 'test' );
-
-      //  }
-
-		$live_key = $this->get_plugin_setting( 'api_key_live' );
-
-	//	if ( ( empty( $environment ) && ! empty( $live_key ) ) || 'live' == $environment ) {
-
-			$choices[] = array( 'label' => __( 'Production', 'gravityformsqualpay' ), 'value' => 'live' );
-
-//		}
-
+		
+		$choices = array();
+		$choices[] = array(
+			'label' => __( 'Sandbox', 'gravityformsqualpayform' ),
+			'value' => 'test',
+		);
+		$choices[] = array(
+			'label' => __( 'Production', 'gravityformsqualpayform' ),
+			'value' => 'live'
+		);
 
 		return array(
-
 			'environment' => array(
-				'title'  => '',
+				'title' => '',
 				'fields' => array(
-					array(
-						'label'         => __( 'Environment', 'gravityformsqualpay' ),
-						'type'          => 'radio',
-						'name'          => 'mode',
-						'tooltip'       => 'Select the environment that will be used to process this form. This cannot be changed later.',
-						'choices'       => $choices,
-						'horizontal'    => true
-					)
+				array(
+				'label'        => __( 'Environment', 'gravityformsqualpayform' ),
+				'type'         => 'radio',
+				'name'         => 'mode',
+				'tooltip'      => 'Select the environment that will be used to process this
+				form. This cannot be changed later.',
+				'choices'      => $choices,
+				'horizontal'   => true,
+				'default_value' => $this->get_qualpay_mode($form),
+				)
 				)
 			)
-			
 		);
-		
 	}
 
 	/**
@@ -2448,33 +2445,28 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
      *
      * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $sections
 	 *
 	 * @return array
 	 */
 	public function add_default_save_button( $sections ) {
-
+		
 	    if ( ! $this->is_form_settings( 'gravityformsqualpay' ) ) {
-			
 			return parent::add_default_save_button( $sections );
         }
 
         if ( ! empty( $_GET['fid'] ) || isset($_GET['fid']) ) {
-
 	        return parent::add_default_save_button( $sections );
         }
 
 	    $environment = $this->get_qualpay_mode( $this->get_current_form() );
 
-	  //  if ( empty( $environment ) ) {
-
+	   // if ( empty( $environment ) ) {
 			return parent::add_default_save_button( $sections );
 
-
-	   // }
-
+	    //}
 
 	    return $sections;
 	}
@@ -2484,7 +2476,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array $form
 	 *
@@ -2568,7 +2560,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return mixed
 	 */
@@ -2582,7 +2574,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return mixed
 	 */
@@ -2596,7 +2588,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return mixed
 	 */
@@ -2608,14 +2600,14 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 		$environment = $this->get_qualpay_mode( $form );
 
 		$merchant_settings = $this->_gfp_qualpay_api->get_merchant_settings_api_key( $this->get_plugin_setting( "merchant_id_{$environment}" ),$environment ,  $this->get_plugin_setting( "api_key_{$environment}" ) );
-		
+
 		if ( $merchant_settings[ 'success' ] && ! empty( $merchant_settings[ 'response' ][ 'data' ] ) ) {
 
 			foreach ( $merchant_settings[ 'response' ][ 'data' ][ 'payment_profiles' ] as $profile ) {
 
 				$profiles[] = array(
 					'id'   => $profile[ 'profile_id' ],
-					'name' => empty( $profile[ 'profile_name' ] ) ? '' : $profile[ 'profile_name' ]
+					'name' => empty( $profile[ 'label' ] ) ? '' : $profile[ 'label' ]
 				);
 
 			}
@@ -2628,18 +2620,15 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return bool
 	 */
 	public function can_create_feed() {
 
-		$settings = $this->get_plugin_settings();
+		 $settings = $this->get_plugin_settings();
 
-		$environment = $this->get_qualpay_mode( $this->get_current_form() );
-
-
-		return ! empty( $settings[ "merchant_id_{$environment}" ] ) && ! empty( $settings[ "api_key_{$environment}" ] );
+		return ((! empty( $settings[ "merchant_id_test" ] ) && ! empty( $settings[ "api_key_test" ] )) ||  (! empty( $settings[ "merchant_id_live" ] ) && ! empty( $settings[ "api_key_live" ] )) );
 
 	}
 
@@ -2650,7 +2639,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return array
 	 */
@@ -2669,7 +2658,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $feed
 	 *
@@ -2700,7 +2689,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $feed
 	 *
@@ -2731,13 +2720,29 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return array
 	 */
 	public function feed_settings_fields() {
 
 		$submit_form_js = "jQuery(this).parents('form').submit();jQuery( this ).parents( 'form' ).find(':input').prop('disabled', true );";
+
+		$settings = $this->get_plugin_settings();
+		$choices = array();
+		
+		if(! empty( $settings[ "merchant_id_test" ] ) && ! empty( $settings[ "api_key_test" ] ) ) {
+			$choices[] = array(
+				'label' => __( 'Sandbox', 'gravityformsqualpayform' ),
+				'value' => 'test',
+			);
+		} 
+		if(! empty( $settings[ "merchant_id_live" ] ) && ! empty( $settings[ "api_key_live" ] ) ) {
+			$choices[] = array(
+				'label' => __( 'Production', 'gravityformsqualpayform' ),
+				'value' => 'live'
+			);
+		}
 
 		$feed_field_name = array(
 			'name'     => 'feedName',
@@ -2747,6 +2752,20 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'tooltip'  => __( 'Name for this feed', 'gravityformsqualpay' ),
 			'class'    => 'medium',
 		);
+
+		$feed_mode = array(
+			'name'     => 'mode',
+			'type'     => 'radio',
+			'required' => true,
+			'label'    => __( 'Environment', 'gravityformsqualpayform' ),
+			'tooltip'      => 'Select the environment that will be used to process this
+				form. You need to add credentials in plugin settings page and you can see your options here.',
+			'class'    => 'medium',
+			'choices'      => $choices,
+			'horizontal'   => true,
+			'onchange' => $submit_form_js
+		);
+
 
 		$feed_field_payment_type = array(
 			'name'     => 'payment_type',
@@ -2779,12 +2798,15 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'label'      => esc_html__( 'Transaction Fields', 'gravityformsqualpay' ),
 			'tooltip'    => '<h6>' . esc_html__( 'Transaction Fields', 'gravityformsqualpay' ) . '</h6>' . esc_html__( 'Select the product fields that will be included in this transaction. Choose Form Total to include all product fields.', 'gravityformsqualpay' ),
 			'choices'    => $this->product_amount_choices(),
-			'dependency' => array(
-				'fields' => array(
-					array( 'field' => 'payment_type', 'values' => array( 'one_time' ) ),
-					array( 'field' => 'plan_type', 'values' => array( 'one_off' ) )
-				),
-				'logic'  => 'any'
+			'rules' => array(
+				array(
+					'field'  => 'payment_type',
+					'value'    => 'one_time',
+				 ),
+				 array(
+					'field'  => 'plan_type',
+					'value'    => 'one_off',
+				 ),
 			)
 		);
 
@@ -2830,7 +2852,9 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 					'value' => 'authorization'
 				),
 			),
-			'dependency' => array( 'field' => 'payment_type', 'values' => array( 'one_time' ) )
+			'dependency' => array( 'field' => 'payment_type', 'values' => array( 'one_time' ) ),
+			'onchange' => $submit_form_js
+
 		);
 
 
@@ -2927,6 +2951,21 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'dependency' => array( 'field' => 'plan_type', 'values' => array( 'one_off' ) )
 		);
 
+		$feed_field_cancel_setup_fail = array(
+			'name'       => 'cancel_setup_fail',
+			'type'       => 'checkbox',
+			'label'      => esc_html__( 'Cancel On Setup Fail', 'gravityformsqualpay' ),
+			'dependency' => array( 'field' => 'plan_type', 'values' => array( 'one_off' ) ),
+			'choices'    => array(
+				array(
+					'name'   => 'cancel_setup_fail',
+					'label'  => 'Enabled',
+					'value'  => true,
+				)
+			),
+		);
+
+
 		$feed_field_start_date = array(
 			'name'       => 'start_date',
 			'type'       => 'field_select',
@@ -2964,11 +3003,18 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'name'       => 'customer_info',
 			'type'       => 'field_map',
 			'label'      => esc_html__( 'Customer Information', 'gravityformsqualpay' ),
-			'dependency' => array(
-				'field'      => 'use_previous_feed_customer_info',
-				'comparison' => 'isnot',
-				'values'     => ( '1' )
-			),
+			// 'dependency' => array(
+			// 	'field'      => 'use_previous_feed_customer_info',
+			// 	'comparison' => 'isnot',
+			// 	'values'     => ( '1' )
+			// ),
+			'rules'      => array(
+				array(
+				   'field'  => 'use_previous_feed_customer_info',
+				   'operator' => 'isnot',
+				   'value'    => '1',
+				),
+   			),
 			'field_map'  => $this->customer_info_fields()
 		);
 
@@ -2976,11 +3022,18 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'name'       => 'billing',
 			'type'       => 'field_map',
 			'label'      => esc_html__( 'Billing Information', 'gravityformsqualpay' ),
-			'dependency' => array(
-				'field'      => 'use_previous_feed_customer_info',
-				'comparison' => 'isnot',
-				'values'     => ( '1' )
-			),
+			// 'dependency' => array(
+			// 	'field'      => 'use_previous_feed_customer_info',
+			// 	'comparison' => 'isnot',
+			// 	'values'     => ( '1' )
+			// ),
+			'rules'      => array(
+				array(
+				   'field'  => 'use_previous_feed_customer_info',
+				   'operator' => 'isnot',
+				   'value'    => '1',
+				),
+   			),
 			'field_map'  => $this->address_fields()
 		);
 
@@ -2988,11 +3041,18 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'name'       => 'shipping',
 			'type'       => 'field_map',
 			'label'      => esc_html__( 'Shipping Information', 'gravityformsqualpay' ),
-			'dependency' => array(
-				'field'      => 'use_previous_feed_customer_info',
-				'comparison' => 'isnot',
-				'values'     => ( '1' )
-			),
+			// 'dependency' => array(
+			// 	'field'      => 'use_previous_feed_customer_info',
+			// 	'comparison' => 'isnot',
+			// 	'values'     => ( '1' )
+			// ),
+			'rules'      => array(
+				array(
+				   'field'  => 'use_previous_feed_customer_info',
+				   'operator' => 'isnot',
+				   'value'    => '1',
+				),
+   			),
 			'field_map'  => $this->address_fields()
 		);
 
@@ -3002,13 +3062,17 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'type'       => 'select',
 			'label'      => esc_html__( 'Payment Profile', 'gravityformsqualpay' ),
 			'choices'    => $this->get_profile_choices(),
-			'dependency' => array(
-				'fields' => array(
-					array( 'field' => 'payment_type', 'values' => array( 'one_time' ) ),
-					array( 'field' => 'plan_type', 'values' => array( 'one_off' ) )
+			'rules'      => array(
+				array(
+				   'field'  => 'payment_type',
+				   'value'    => 'one_time',
 				),
+				 array(
+				   'field'  => 'plan_type',
+				   'value'    => 'one_off',
+				),
+		   ),
 				'logic'  => 'any'
-			)
 		);
 
 		$feed_field_email_receipt = array(
@@ -3050,10 +3114,40 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'tooltip' => '<h6>' . esc_html__( 'Conditional Logic', 'gravityformsqualpay' ) . '</h6>' . esc_html__( 'When conditions are enabled, form submissions will only be sent to the payment gateway when the conditions are met. When disabled, all form submissions will be sent to the payment gateway.', 'gravityformsqualpay' )
 		);
 
+		$feed_field_ach_on_off = array(
+			'name'       => 'achOnOff_checkbox',
+			'type'       => 'checkbox',
+			'label'      => __( 'Enable ACH Payments', 'gravityformsqualpay' ),
+			'tooltip'    => '<h6>' . esc_html__( 'ACH', 'gravityformsqualpay' ) . '</h6>' . esc_html__( 'Qualpay ACH Payments requires a separate merchant account application.  Contact Qualpay at <a href="mailto:sales@qualpay.com">sales@qualpay.com</a> if you need to apply for ACH Payments.', 'gravityformsqualpay' ),
+			'choices'    => array(
+				array(
+					'name'          => 'achOnOff',
+					'label'         => '',
+					'default_value' => '1',
+				)
+			),
+			'dependency' => array( 'field' => 'transaction_type', 'values' => array( 'sale' ) )
+		);
+
+		$feed_field_custom_css = array(
+			'name'       => 'custom_css',
+			'type'       => 'textarea',
+			'label'      => __( 'Custom CSS for Embedded Fields', 'gravityformsqualpay' ),
+			'class'   => 'medium',
+			'choices'    => array(
+				array(
+					'name'          => 'custom_css',
+					'label'         => ''
+				)
+			)
+		);
+		
+
 		$sections = array(
 			'section_feed_name'                 => array(
 				'fields' => array(
-					$feed_field_name
+					$feed_field_name,
+					$feed_mode
 				)
 			),
 			'section_payment_type'              => array(
@@ -3069,7 +3163,8 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 				),
 				'fields'     => array(
 					$feed_field_transaction_fields,
-					$feed_field_transaction_type
+					$feed_field_transaction_type,
+					$feed_field_ach_on_off
 				)
 			),
 			'section_subscription_settings'     => array(
@@ -3087,6 +3182,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 					$feed_field_plan_interval,
 					$feed_field_plan_duration,
 					$feed_field_setup_fee,
+					$feed_field_cancel_setup_fail,
 					$feed_field_start_date
 				)
 			),
@@ -3107,7 +3203,8 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 					$feed_field_payment_profile,
 					$feed_field_email_receipt,
 					$feed_field_purchase_id,
-					$feed_field_report_data
+					$feed_field_report_data,
+					$feed_field_custom_css
 				)
 			),
 			'section_conditional_logic'         => array(
@@ -3128,7 +3225,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 *
 	 * @return mixed
@@ -3173,7 +3270,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return array
 	 */
@@ -3213,7 +3310,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return array
 	 */
@@ -3258,7 +3355,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return array
 	 */
@@ -3293,7 +3390,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array $form - The form object
 	 * @param array $args - Additional settings to check for (field and input types to include, callback for applicable
@@ -3418,7 +3515,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array|string $dependency - Field or input name of the "parent" field.
 	 *
@@ -3494,7 +3591,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $dependency
 	 *
@@ -3595,7 +3692,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param string              $markup
 	 * @param GF_Field_CreditCard $field
@@ -3659,7 +3756,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 				}
 
-				$payment_options .= "<div class='gform_payment_option gform_payment_{$payment_method['key']}'><input type='radio' name='gform_payment_method' value='{$payment_method['key']}' id='gform_payment_method_{$payment_method['key']}' onclick='gformToggleCreditCard();' onkeypress='gformToggleCreditCard();' {$checked}/> {$payment_method['label']}</div>";
+				$payment_options .= "<div class='gform_payment_option gform_payment_{$payment_method['key']}'><input type='radio' style='width:25px;' name='gform_payment_method' value='{$payment_method['key']}' id='gform_payment_method_{$payment_method['key']}' onclick='gformToggleCreditCard();' onkeypress='gformToggleCreditCard();' {$checked}/> {$payment_method['label']}</div>";
 
 			}
 
@@ -3667,16 +3764,26 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 		$checked = rgpost( 'gform_payment_method' ) == 'creditcard' || rgempty( 'gform_payment_method' ) ? "checked='checked'" : '';
 
-		$card_radio_button = empty( $payment_options ) ? '' : "<input type='radio' name='gform_payment_method' id='gform_payment_method_creditcard' value='creditcard' onclick='gformToggleCreditCard();' onkeypress='gformToggleCreditCard();' {$checked}/>";
+		$card_radio_button = empty( $payment_options ) ? '' : "<input type='radio' style='width:25px;' name='gform_payment_method' id='gform_payment_method_creditcard' value='creditcard' onclick='gformToggleCreditCard();' onkeypress='gformToggleCreditCard();' {$checked}/>";
 
 		$card_icons = "{$payment_options}<div class='gform_card_icon_container gform_card_icon_{$card_style}'>{$card_radio_button}{$card_icons}</div>";
 
 		$card_field = "<span class='ginput_full{$class_suffix}' id='{$html_input_id}_1_container' >
                                     {$card_icons}
                                     </span>";
-
-		$embedded_field = '<div id="qp-embedded-container" align="center"></div>';
-
+		
+		$feeds = $this->get_feeds( $form_id );
+		$feed_meta = $feeds[0]['meta'];
+		$tran_type = $feed_meta['transaction_type'];
+		$achToogle = $feed_meta['achOnOff'];
+		$custom_css = $feed_meta['custom_css'];
+		$embedded_field = '<div id="qp-embedded-container" style="width:100%" align="center"></div>';
+		$embedded_field .= '
+		<input type="hidden" id="capture_id" name="capture_id" value="' . $tran_type . '" />
+		<input type="hidden" id="achOnOff" name="achOnOff" value="' . $achToogle . '" />';
+		if(isset($custom_css) && $custom_css != '') {
+			echo wp_kses( "<style>".$custom_css."</style>", array('style' => array()) );
+		}
 
 		return "<div class='ginput_complex{$class_suffix} ginput_container ginput_container_creditcard' id='{$html_input_id}'>" . $card_field . $embedded_field . ' </div>';
 
@@ -3704,7 +3811,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array               $payment_methods
 	 * @param GF_Field_CreditCard $field
@@ -3726,14 +3833,21 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			$cards = GFP_Qualpay_Customer_API::get_billing_cards( $user_id );
 
 			$default_card = GFP_Qualpay_Customer_API::get_default_billing_card( $user_id );
+			$customer_id = GFP_Qualpay_Customer_API::get_customer_id( $user_id ,$merchant_id ,$mode );
 
+			$this->get_qualpay_api( $mode );
+			$get_qualpay_card_ids = $this->_gfp_qualpay_api->get_customer_billing_cards($customer_id, $merchant_id);
+			
+			$card_ids = array();
+			foreach ($get_qualpay_card_ids['response']['data']['billing_cards'] as $billing_card) {
+				$card_ids[] = $billing_card['card_id'];
+			}
 			
 			foreach ( $cards as $card ) {
-				//print_r($card);
+				$card_id = $card['id'];
 				if (strpos($card['mode'], $mode) !== false) {
-					//echo $merchant_id;
-						if (strpos($card['merchant_id'], $merchant_id) !== false) {
-							
+					if (strpos($card['merchant_id'], $merchant_id) !== false) {
+						if( in_array( $card_id, $card_ids ) ) {
 							$payment_methods[] = array_merge( $card,
 								array(
 									'key'     => $card[ 'id' ],
@@ -3742,7 +3856,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 								)
 							);
 						}
-					
+					}
 				}
 			}
 
@@ -3761,7 +3875,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param string   $content
 	 * @param GF_Field $field
@@ -3797,6 +3911,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 		$content .= "<input type='hidden' name='input_{$field->id}.4' id='input_{$form_id}_{$field->id}_4' value='" . rgpost( "input_{$field->id}_4" ) . "' />";
 
+		$content .= "<input type='hidden' name='input_{$field->id}.5' id='input_{$form_id}_{$field->id}_5' value='" . rgpost( "input_{$field->id}_5" ) . "' />";
 
 		return $content;
 
@@ -3828,7 +3943,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array $form
 	 * @param array $field_values
@@ -3844,7 +3959,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $form
 	 * @param $is_ajax
@@ -3927,7 +4042,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 */
 	public function ajax_qualpay_transient_key() {
 
@@ -3957,18 +4072,22 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $form
 	 *
 	 * @return array|string
 	 */
 	public function get_qualpay_mode( $form ) {
-
-		$form_settings = $this->get_form_settings( $form );
-
-		
-		return $this->get_setting( 'mode', '', $form_settings );
+		// $form_settings = $this->get_form_settings( $form );
+		$form_id = $form['id'];
+		$feeds = $this->get_feeds( $form_id );
+		if( is_admin() ) {
+			$feed = $feeds['meta'];
+		} else {
+			$feed = $feeds[0]['meta'];
+		}
+		return $this->get_setting( 'mode', '', $feed );
 	}
 
 	/**************************************************
@@ -3981,7 +4100,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $validation_result
 	 * @param $value
@@ -4041,7 +4160,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array $validation_result
 	 *
@@ -4222,7 +4341,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array $feed
 	 * @param array $form
@@ -4266,6 +4385,17 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 				$customer_info_last_name =  $this->get_setting( 'customer_info_last_name', '', $feed[ 'meta' ] );
 				$shipping_zip = $this->get_setting( 'shipping_zip', '', $feed[ 'meta' ] ); 
 				$billing_zip = $this->get_setting( 'billing_zip', '', $feed[ 'meta' ] ); 
+				$business_name =  $this->get_setting( 'customer_info_firm_name', '', $feed[ 'meta' ] );
+				
+				if($this->current_submission_data[ 'card' ][ 'type' ] == 'ACH') {
+					if(isset($this->current_submission_data[ 'card' ][ 'type_id' ] ) && ($this->current_submission_data[ 'card' ][ 'type_id' ]  == 'K'  || $this->current_submission_data[ 'card' ][ 'type_id' ]  == 'V') && isset($entry[$business_name]) && $entry[$business_name] != '') {
+						$cardholder_name = $entry[$business_name];
+					} else {
+						$cardholder_name = $entry[$customer_info_first_name]." ".$entry[$customer_info_last_name];
+					}
+				} else {
+					$cardholder_name = $entry[$customer_info_first_name]." ".$entry[$customer_info_last_name];
+				}
 
 				if($billing_zip) {
 					$avs_zip = $entry[$billing_zip];
@@ -4299,10 +4429,9 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 					'profile_id'       => $profile_id,
 					'purchase_id'      => $purchase_id,
 					'report_data'      => $this->get_dynamic_field_map_values( 'report_data', $feed, $entry, $form ),
-					'cardholder_name'	=> $entry[$customer_info_first_name]." ".$entry[$customer_info_last_name]
+					'cardholder_name'	=> $cardholder_name
 				);
 
-				
 				$email_receipt = $this->get_setting( 'email_receipt' ,'' , $feed[ 'meta' ] );
 				
 				if ( $email_receipt == '1' ) {
@@ -4362,6 +4491,8 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 					$shipping_zip = $this->get_setting( 'shipping_zip', '', $feed[ 'meta' ] ); 
 					$billing_zip = $this->get_setting( 'billing_zip', '', $feed[ 'meta' ] ); 
 					
+					$cancel_setup_fail = (boolval($this->get_setting( 'cancel_setup_fail', "0",  $feed['meta']) )? 'true' : 'false');
+
 					if($billing_zip) {
 						$avs_zip = $entry[$billing_zip];
 					} else if($shipping_zip) {
@@ -4370,14 +4501,15 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 						$avs_zip = '11111';
 					}
 					$this->current_submission_data[ 'subscription' ] = array(
-						'customer_id'    => $this->_current_customer_id,
-						'date_start'     => $start_date,
-						'plan_desc'      => $plan_desc,
-						'plan_frequency' => $plan_frequency,
-						'plan_duration'  => $plan_duration,
-						'amt_tran'       => $this->current_submission_data[ 'payment_amount' ],
-						'avs_zip'			=> $avs_zip,
-						'profile_id'     => $profile_id
+						'customer_id'    		=> $this->_current_customer_id,
+						'date_start'     		=> $start_date,
+						'plan_desc'      		=> $plan_desc,
+						'plan_frequency' 		=> $plan_frequency,
+						'plan_duration'  		=> $plan_duration,
+						'cancel_on_setup_fail' 	=> $cancel_setup_fail,
+						'amt_tran'       		=> $this->current_submission_data[ 'payment_amount' ],
+						'avs_zip'				=> $avs_zip,
+						'profile_id'     		=> $profile_id
 					);
 
 					if ( 3 == $plan_frequency ) {
@@ -4413,7 +4545,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param array $feed
 	 * @param array $form
@@ -4527,7 +4659,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 */
 	private function get_customer() {
 
@@ -4760,7 +4892,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 */
 	private function get_billing_card() {
 
@@ -4812,6 +4944,9 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 				'billing_last_name' => $customer_info_last_name,
 			);
 
+			if($new_card_info[ 'billing_zip' ] == '') {
+				$new_card_info[ 'billing_zip' ]= '11111';
+			}
 			$customer = $this->_gfp_qualpay_api->add_billing_card( $this->_current_customer_id, $new_card_info[ 'billing_zip' ], $new_card_info[ 'id' ], $args);
 
 			if ( $customer[ 'success' ] && ! empty( $customer[ 'response' ][ 'data' ] ) ) {
@@ -4827,7 +4962,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $address_type
 	 */
@@ -4893,7 +5028,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @return array
 	 */
@@ -4906,6 +5041,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'card_number' => rgpost( "input_{$card_field->id}_1" ),
 			'last4'       => substr( rgpost( "input_{$card_field->id}_1" ), - 4, 4 ),
 			'type'        => rgpost( "input_{$card_field->id}_4" ),
+			'type_id'        => rgpost( "input_{$card_field->id}_5" ),
 			'default'     => true
 		);
 
@@ -4937,7 +5073,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay  
 	 *
 	 * @param $name_code
 	 *
@@ -4973,7 +5109,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author gravity+ for Qualpay  
 	 *
 	 * @param int    $length
 	 * @param string $keyspace
@@ -5004,7 +5140,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $field_name
 	 * @param $feed
@@ -5042,7 +5178,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $feed
 	 * @param array $submission_data
@@ -5083,7 +5219,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $authorization
 	 * @param array $feed
@@ -5131,7 +5267,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $feed
 	 * @param array $submission_data
@@ -5206,7 +5342,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $feed
 	 * @param array $entry
@@ -5285,7 +5421,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $entry The Entry Object.
 	 * @param array $form  The Form Object.
@@ -5335,7 +5471,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $user_id
 	 */
@@ -5363,7 +5499,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param      $first_name
 	 * @param      $last_name
@@ -5406,7 +5542,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $card_id
 	 * @param $user_id
@@ -5436,7 +5572,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $entry
 	 * @param $subscription
@@ -5483,7 +5619,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -5502,7 +5638,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return string
 	 */
@@ -5517,7 +5653,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $entry_meta
 	 * @param int   $form_id
@@ -5540,7 +5676,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $key
 	 * @param $entry
@@ -5568,7 +5704,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $meta_boxes
 	 * @param $entry
@@ -5598,7 +5734,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $args
 	 */
@@ -5644,7 +5780,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	public function ajax_payment_action() {
 
@@ -5822,7 +5958,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $entry_id
 	 * @param $feed_id
@@ -5843,7 +5979,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $entry
 	 * @param array $feed
@@ -5884,7 +6020,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return bool
 	 */
@@ -5955,7 +6091,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array|bool
 	 */
@@ -6054,7 +6190,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $entry
 	 * @param $action
@@ -6087,7 +6223,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $entry
 	 * @param $action
@@ -6119,7 +6255,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	/**
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $transaction_id
 	 *
@@ -6167,7 +6303,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	public function render_uninstall() {
 
@@ -6184,7 +6320,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return bool
 	 */

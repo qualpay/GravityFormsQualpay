@@ -1,15 +1,15 @@
 <?php
 /**
  * @wordpress-plugin
- * Plugin Name: Gravity Forms Qualpay Add-On
+ * Plugin Name: Qualpay Add-on for Gravity forms
  * Plugin URI: https://www.qualpay.com
- * Description: Integrate Gravity Forms with Qualpay
- * Version: 1.2.4
- * Author: gravity+ for Qualpay
+ * Description: Qualpay Add-on for Gravity forms
+ * Version: 1.3
+ * Author: Qualpay
  * Author URI: https://qualpay.com
  * Text Domain: gravityformsqualpay
  * Domain Path: /languages
- * License:     GPL-2.0+
+ * License:     GPLv2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,21 +17,11 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
  * @package   GFP_Qualpay
- * @version   1.2.4
- * @author    gravity+ <support@gravityplus.pro>
+ * @version   1.3
+ * @author    QUALPAY <support@qualpay.com>
  * @license   GPL-2.0+
- * @link      https://gravityplus.pro
- * @copyright 2018 gravity+
+ * @link      https://qualpay.com
  *
  */
 
@@ -42,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-define( 'GFP_QUALPAY_CURRENT_VERSION', '1.2.4' );
+define( 'GFP_QUALPAY_CURRENT_VERSION', '1.3' );
 
 define( 'GFP_QUALPAY_FILE', __FILE__ );
 
@@ -61,3 +51,4 @@ GFP_Qualpay_Loader::load();
 $gravityformsqualpay = new GFP_Qualpay();
 
 $gravityformsqualpay->run();
+//require_once 'includes/class-qualpay-webhook.php';

@@ -1,6 +1,6 @@
 <?php
 /* @package   GFP_Qualpay\GFP_Qualpay_API
- * @author    Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author    Jankee Patel from Qualpay 
  * @copyright 2018 gravity+
  * @license   GPL-2.0+
  * @since     1.0.0
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 class GFP_Qualpay_API {
 
@@ -27,7 +27,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -38,7 +38,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -49,7 +49,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -60,7 +60,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -72,7 +72,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -83,7 +83,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 */
 	protected $logger = null;
@@ -93,7 +93,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -106,7 +106,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @var string
 	 */
@@ -123,7 +123,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $mode
 	 * @param string $api_key
@@ -186,7 +186,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $merchant_id
 	 *
@@ -215,7 +215,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $api_key
 	 *
@@ -253,7 +253,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $mid Merchant ID
 	 *
@@ -284,7 +284,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $merchant_id Required. Qualpay unique ID
 	 * @param array  $args        {
@@ -406,6 +406,19 @@ class GFP_Qualpay_API {
 
 	}
 
+
+	/**
+	 * Send the request to the Qualpay API
+	 *
+	 * @param array $args
+	 * @return array|mixed|object|WP_Error
+	 */
+	public function get_customer_billing_cards( $customer_id, $merchant_id ) {
+
+		return $this->send_request( "{$this->{$this->mode . '_endpoint'}}/platform/vault/customer/{$customer_id}/billing?merchant_id={$merchant_id}", 'GET', array() );
+
+	}
+
 	/**
 	 * Capture authorized transaction
 	 *
@@ -413,7 +426,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $merchant_id Required. Qualpay unique ID
 	 * @param string $pg_id       Required. Qualpay unique ID
@@ -452,7 +465,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $merchant_id Required. Qualpay unique ID
 	 * @param array  $args        See GFP_Qualpay_API::authorize_transaction for description
@@ -476,7 +489,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $merchant_id Required. Qualpay unique ID
 	 * @param string $pg_id       Required. Payment gateway ID
@@ -503,7 +516,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $merchant_id Required. Qualpay unique ID
 	 * @param string $pg_id       Required. Qualpay unique ID
@@ -535,7 +548,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -560,7 +573,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $args {
 	 *                    Optional.
@@ -622,7 +635,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $customer_id Required. Qualpay unique ID
 	 * @param string $date_start  Required. Qualpay unique ID
@@ -671,7 +684,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $id          Required. Subscription ID
 	 * @param string $customer_id Required. Qualpay unique ID
@@ -697,7 +710,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $id          Required. Subscription ID
 	 * @param string $customer_id Required. Qualpay unique ID
@@ -723,7 +736,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $id          Required. Subscription ID
 	 * @param string $customer_id Required. Qualpay unique ID
@@ -755,7 +768,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $id         Required. Unique ID to identify a customer. Used to add subscriptions or make
 	 *                           payments. Cannot be updated. Up to 32 characters, case sensitive, only letters and
@@ -817,7 +830,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $id Required. Customer ID
 	 *
@@ -838,7 +851,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $customer_id Required. Qualpay unique ID
 	 * @param string $billing_zip Required. Qualpay unique ID
@@ -885,7 +898,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $id            Required. Billing card ID
 	 * @param string $customer_id   Required. Customer ID
@@ -917,7 +930,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $label            Required. Label to identify the webhook
 	 * @param string $notification_url Required. Endpoint to which requests will be posted
@@ -966,7 +979,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $webhook_id Required.
 	 *
@@ -987,7 +1000,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $webhook_id Required.
 	 *
@@ -1008,7 +1021,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param array $args {
 	 *                    Optional.
@@ -1042,7 +1055,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $api_key
 	 */
@@ -1057,7 +1070,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $mode
 	 */
@@ -1072,7 +1085,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $url
 	 * @param string $method
@@ -1182,7 +1195,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return string
 	 */
@@ -1735,7 +1748,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -1746,7 +1759,8 @@ class GFP_Qualpay_API {
 			'DS' => 'Discover',
 			'PP' => 'PayPal',
 			'MC' => 'MasterCard',
-			'VS' => 'Visa'
+			'VS' => 'Visa',
+			'AP' => 'ACH'
 		);
 
 	}
@@ -1758,7 +1772,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -1797,7 +1811,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */
@@ -1818,7 +1832,7 @@ class GFP_Qualpay_API {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return array
 	 */

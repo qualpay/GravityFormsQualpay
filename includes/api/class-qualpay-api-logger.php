@@ -8,7 +8,7 @@
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 class GFP_Qualpay_Psr_Logger_Interface {
 
@@ -26,7 +26,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $message
 	 * @param array  $context
@@ -49,7 +49,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $message
 	 * @param array  $context
@@ -71,7 +71,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $message
 	 * @param array  $context
@@ -95,7 +95,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return null
 	 */
@@ -115,7 +115,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $message
 	 * @param array  $context
@@ -138,7 +138,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return null
 	 */
@@ -157,7 +157,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param string $message
 	 * @param array  $context
@@ -180,7 +180,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @return null
 	 */
@@ -201,7 +201,7 @@ class GFP_Qualpay_Psr_Logger_Interface {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 class GFP_Qualpay_API_Logger {
 
@@ -215,7 +215,7 @@ class GFP_Qualpay_API_Logger {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	public function __construct() {
 
@@ -228,7 +228,7 @@ class GFP_Qualpay_API_Logger {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 */
 	private function create_logger() {
 

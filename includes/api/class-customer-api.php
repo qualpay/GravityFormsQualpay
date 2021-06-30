@@ -1,6 +1,6 @@
 <?php
 /* @package   GFP_Qualpay\GFP_Qualpay_Customer_API
- * @author    Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author    Jankee Patel from Qualpay 
  * @copyright 2018 gravity+
  * @license   GPL-2.0+
  * @since     1.0.0
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since 1.0.0
  *
- * @author    Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author    Jankee Patel from Qualpay 
  *
  */
 class GFP_Qualpay_Customer_API {
@@ -43,7 +43,7 @@ class GFP_Qualpay_Customer_API {
        // print_r($get_customer_id);                    
 			if($mode != 'test') {
 				for($i=0;$i<count($get_customer_id);$i++) {
-					if (strpos($get_customer_id[$i], 'production') !== false) {
+					if (strpos($get_customer_id[$i], 'live') !== false) {
 						$mid = $merchant_id;
 						if (strpos($get_customer_id[$i], $mid) !== false) {
 							$mydata = unserialize($get_customer_id[$i]);
@@ -107,7 +107,7 @@ class GFP_Qualpay_Customer_API {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $user_id
 	 * @param $card_details
@@ -119,6 +119,7 @@ class GFP_Qualpay_Customer_API {
 		'id'        => $card_details[ 'id' ],
 		'last4'     => $card_details[ 'last4' ],
 		'type'      => $card_details[ 'type' ],
+		'type_id'   => $card_details[ 'type_id' ],
 		'mode'		=> $mode,
 		'merchant_id'=> $merchant_id
 		) );
@@ -137,7 +138,7 @@ class GFP_Qualpay_Customer_API {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $user_id
 	 *
@@ -154,7 +155,7 @@ class GFP_Qualpay_Customer_API {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $user_id
 	 *
@@ -171,7 +172,7 @@ class GFP_Qualpay_Customer_API {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+	 * @author Jankee Patel from Qualpay 
 	 *
 	 * @param $user_id
 	 * @param $card_id

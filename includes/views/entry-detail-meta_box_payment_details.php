@@ -6,7 +6,7 @@
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 if ( ! empty( $transactions ) ) {
 

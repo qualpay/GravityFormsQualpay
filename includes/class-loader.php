@@ -1,7 +1,7 @@
 <?php
 /*
  * @package   GFP_Qualpay\GFP_Qualpay_Loader
- * @author    Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author    Jankee Patel from Qualpay 
  * @copyright 2018 gravity+
  * @license   GPL-2.0+
  * @since     1.0.0
@@ -19,7 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 class GFP_Qualpay_Loader {
 

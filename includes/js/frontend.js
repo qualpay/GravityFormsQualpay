@@ -5,7 +5,7 @@
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 
 jQuery(document).on('gform_post_render', gravityformsqualpay);
@@ -68,10 +68,17 @@ function gravityformsqualpay(event, form_id, current_page) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  */
 function gravityformsqualpay_load_frame(){
-
+    var capture_id = jQuery("#capture_id").val();
+    var achOnOff = jQuery("#achOnOff").val();
+    
+    var enable_ach = false;
+    if(capture_id == 'sale' && (achOnOff == 1 || achOnOff == '')){
+        enable_ach = true;
+    }
+    //alert("ach"+enable_ach);
     qpEmbeddedForm.loadFrame(gfp_qualpay_frontend_strings.merchant_id,
         {
             formId: gfp_qualpay_frontend_strings.form_element_id,
@@ -79,7 +86,10 @@ function gravityformsqualpay_load_frame(){
             transientKey: gfp_qualpay_frontend_strings.transientKey,
             tokenize: true,
             onSuccess: gravityformsqualpay_success,
-            onError: gravityformsqualpay_error
+            onError: gravityformsqualpay_error,
+            achConfig: {
+                enabled: enable_ach
+               },
         });
 }
 
@@ -88,24 +98,37 @@ function gravityformsqualpay_load_frame(){
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  *
  * @param data
  */
 function gravityformsqualpay_success(data) {
 
+    
     var card_id = data.card_id,
         card_number = data.card_number,
+        card_type = data.card_type,
+        type_id = data.type_id,
         form_id = gfp_qualpay_frontend_strings.formId,
         form = jQuery('#gform_' + form_id),
         creditcard_field_id = gfp_qualpay_frontend_strings.creditcard_field_id;
 
-    form.find(gfp_qualpay_frontend_strings.responseField).val(card_id);
+    const types = {
+            AM : 'Amex',
+            DS : 'Discover',
+            PP : 'PayPal',
+            MC : 'MasterCard',
+            VS : 'Visa',
+            AP : 'ACH'
+    }
+
+   form.find(gfp_qualpay_frontend_strings.responseField).val(card_id);
 
     form.find('#input_' + form_id + '_' + creditcard_field_id + '_1').val(card_number);
 
-    form.find('#input_' + form_id + '_' + creditcard_field_id + '_4').val(gformFindCardType(card_number));
-
+    form.find('#input_' + form_id + '_' + creditcard_field_id + '_4').val(types[card_type]);
+    
+    form.find('#input_' + form_id + '_' + creditcard_field_id + '_5').val(type_id);
 
     form.submit();
 }
@@ -117,7 +140,7 @@ function gravityformsqualpay_success(data) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  *
  * @param error
  */
@@ -148,7 +171,7 @@ function gravityformsqualpay_error(error) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  *
  * @param form_id
  * @returns {boolean}
@@ -174,7 +197,7 @@ function gformQualpayIsPostback(form_id) {
  *
  * @since  1.0.0
  *
- * @author Naomi C. Bush for gravity+ for Qualpay <support@gravityplus.pro>
+ * @author Jankee Patel from Qualpay 
  *
  * @param form_id
  * @returns {boolean}
