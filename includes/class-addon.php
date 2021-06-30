@@ -2368,16 +2368,10 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 
 			}
 
-			$icon = $this->form_settings_icon();
-
-			if ( empty( $icon ) ) {
-
-				$icon = '<i class="fa fa-cogs"></i>';
-
-			}
-
 			?>
-            <h3><span><?php echo $icon; ?><?php echo esc_html__( $page_title, 'gravityformsqualpay' ); ?></span></h3>
+
+            <h3><span><?php echo '<img style="height:1em;" src="' . GFP_QUALPAY_URL . 'includes/images/qualpay-icon-white.png">'; ?><?php echo esc_html__( $page_title, 'gravityformsqualpay' ); ?></span></h3>
+			
 			<?php
 
 			//$this->render_settings( $sections );

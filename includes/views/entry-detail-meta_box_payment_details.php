@@ -25,9 +25,9 @@ if ( ! empty( $transactions ) ) {
                 <div id="gf_qualpay_customer_id" class="gf_payment_detail">
 					<?php esc_html_e( 'Customer', 'gravityforms' ) ?>:
                     <span id="gform_customer_id">
-                        <a href="<?php echo $qm_base_url ?>merchant/customers/detail/<?php echo $customer_id ?>"
+                        <a href="<?php echo esc_html__( $qm_base_url, 'gravityformsqualpay' ); ?>merchant/customers/detail/<?php echo esc_html__( $customer_id, 'gravityformsqualpay' ); ?>"
                            target="_blank" rel="noopener noreferrer"
-                           title="Link to item in Qualpay Manager"><?php echo $customer_id ?></a>
+                           title="Link to item in Qualpay Manager"><?php echo esc_html__( $customer_id, 'gravityformsqualpay' ); ?></a>
                     </span>
                 </div>
 
@@ -129,49 +129,49 @@ if ( ! empty( $transactions ) ) {
 
 				if ( ! empty( $payment_status ) ) {
 					?>
-                    <div id="transaction_<?php echo $transaction_id ?>">
-                        <div id="gf_payment_status_<?php echo $transaction_id ?>" class="gf_payment_detail">
+                    <div id="transaction_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>">
+                        <div id="gf_payment_status_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>" class="gf_payment_detail">
 							<?php esc_html_e( 'Status', 'gravityforms' ) ?>:
-                            <span id="gform_payment_status_<?php echo $transaction_id ?>"><?php echo $payment_status; ?></span>
+                            <span id="gform_payment_status_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>"><?php echo esc_html__( $payment_status, 'gravityformsqualpay' ); ?></span>
                         </div>
 
 						<?php
 
 						if ( ! empty( $payment_date ) ) {
 							?>
-                            <div id="gf_payment_date_<?php echo $transaction_id ?>" class="gf_payment_detail">
-								<?php echo $date_label ?>
+                            <div id="gf_payment_date_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>" class="gf_payment_detail">
+								<?php echo esc_html__($date_label, 'gravityformsqualpay' ); ?>
                                 :
-                                <span id="gform_payment_date_<?php echo $transaction_id ?>"><?php echo $payment_date; ?></span>
+                                <span id="gform_payment_date_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>"><?php echo esc_html__( $payment_date, 'gravityformsqualpay' ); ?></span>
                             </div>
 							<?php
 						}
 
 						if ( ! empty( $transaction_id ) ) {
 							?>
-                            <div id="gf_payment_transaction_id_<?php echo $transaction_id ?>" class="gf_payment_detail">
-								<?php echo $transaction_id_label ?>
+                            <div id="gf_payment_transaction_id_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>" class="gf_payment_detail">
+								<?php echo esc_html__( $transaction_id_label, 'gravityformsqualpay' ); ?>
                                 :
-                                <span id='gform_payment_transaction_id_<?php echo $transaction_id ?>'><a
-                                            href="<?php echo $qm_transaction_link ?>" target="_blank"
+                                <span id='gform_payment_transaction_id_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>'><a
+                                            href="<?php echo esc_html__($qm_transaction_link, 'gravityformsqualpay' ); ?>" target="_blank"
                                             rel="noopener noreferrer"
-                                            title="Link to item in Qualpay Manager"><?php echo $transaction_id; ?></a></span>
+                                            title="Link to item in Qualpay Manager"><?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?></a></span>
                             </div>
 							<?php
 						}
 
 						if ( ! rgblank( $payment_amount ) ) {
 							?>
-                            <div id="gf_payment_amount_<?php echo $transaction_id ?>" class="gf_payment_detail">
-								<?php echo $payment_amount_label ?>
+                            <div id="gf_payment_amount_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>" class="gf_payment_detail">
+								<?php echo esc_html__( $payment_amount_label, 'gravityformsqualpay' ); ?>
                                 :
-                                <span id="gform_payment_amount_<?php echo $transaction_id ?>"><?php echo $payment_amount; ?></span>
+                                <span id="gform_payment_amount_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>"><?php echo esc_html__( $payment_amount, 'gravityformsqualpay' ); ?></span>
                             </div>
 							<?php
 						} ?>
                         <br/><br/>
 						<?php if ( ! empty( $payment_actions ) ) { ?>
-                            <div id="gf_payment_actions_<?php echo $transaction_id ?>">
+                            <div id="gf_payment_actions_<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>">
 								<?php foreach ( $payment_actions as $action_link ) {
 									?>
 
@@ -181,8 +181,8 @@ if ( ! empty( $transactions ) ) {
                                            value="<?php echo $action_link[ 'label' ] ?>"
                                            data-entry="<?php echo absint( $entry[ 'id' ] ); ?>"
                                            data-action="<?php echo $action_link[ 'action' ] ?>"
-                                           data-transaction="<?php echo $transaction_id ?>"
-                                           data-feed="<?php echo $feed_id ?>"
+                                           data-transaction="<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>"
+                                           data-feed="<?php echo  esc_html__($feed_id, 'gravityformsqualpay' ); ?>"
                                            class="button"
                                            onclick="do_entry_payment_action(this);"
                                            onkeypress="do_entry_payment_action(this);"/>
