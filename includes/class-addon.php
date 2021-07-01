@@ -2922,7 +2922,7 @@ class GFP_Qualpay_Addon extends GFPaymentAddOn {
 			'label'      => esc_html__( 'Monthly Interval', 'gravityformsqualpay' ),
 			'tooltip'    => '<h6>' . esc_html__( 'Monthly Interval', 'gravityformsqualpay' ) . '</h6>' . esc_html__( 'Number of months in the subscription cycle e.g. bill every 2 months', 'gravityformsqualpay' ),
 			'choices'    => $this->get_numeric_choices( 1, 12 ),
-			'class'      => ( 3 == $this->get_setting( 'plan_frequency' ) ) ? '' : 'hidden',
+			'hidden'      => ( $this->get_setting( 'plan_frequency' ) === 3) ? false : true,
 			'dependency' => array( 'field' => 'plan_type', 'values' => array( 'one_off' ) )
 		);
 

@@ -175,14 +175,14 @@ if ( ! empty( $transactions ) ) {
 								<?php foreach ( $payment_actions as $action_link ) {
 									?>
 
-                                    <input id=""
+									<input id=""
                                            type="button"
-                                           name="<?php echo esc_html__($action_link[ 'action' ],'gravityformsqualpay'); ?>"
-                                           value="<?php echo esc_html__($action_link[ 'label' ],'gravityformsqualpay'); ?>"
-                                           data-entry="<?php echo esc_html__(absint( $entry[ 'id' ]) ,'gravityformsqualpay'); ?>"
-                                           data-action="<?php echo esc_html__($action_link[ 'action' ],'gravityformsqualpay'); ?>"
-                                           data-transaction="<?php echo esc_html__( $transaction_id, 'gravityformsqualpay' ); ?>"
-                                           data-feed="<?php echo  esc_html__($feed_id, 'gravityformsqualpay' ); ?>"
+                                           name="<?php echo esc_html($action_link[ 'action' ]); ?>"
+                                           value="<?php echo esc_html($action_link[ 'label' ]); ?>"
+                                           data-entry="<?php echo esc_html(absint( $entry[ 'id' ])); ?>"
+                                           data-action="<?php echo esc_html($action_link[ 'action' ]); ?>"
+                                           data-transaction="<?php echo esc_html( $transaction_id); ?>"
+                                           data-feed="<?php echo esc_html($feed_id ); ?>"
                                            class="button"
                                            onclick="do_entry_payment_action(this);"
                                            onkeypress="do_entry_payment_action(this);"/>
